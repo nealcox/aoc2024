@@ -29,7 +29,6 @@ def calculate(input_text):
 
 
 def get_nums(item, char):
-    print(item, "\n", char)
     lines = zip(*item.split())
     if char == ".":
         return tuple(l.index(char) - 1 for l in lines)
